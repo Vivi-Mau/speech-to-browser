@@ -13,7 +13,7 @@ npm start
 
 This Programm will run in your browser: localhost:3000
 
-##Happy Streaming
+## Happy Streaming
 
-![Giphy](<iframe src="https://giphy.com/embed/Wxm84fHyo1ts243L2g" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/susu-swimsuit-succubus-sssuccubus-Wxm84fHyo1ts243L2g">via GIPHY</a></p>)
+![Giphy](https://media.giphy.com/media/Wxm84fHyo1ts243L2g/giphy.gif)
 
