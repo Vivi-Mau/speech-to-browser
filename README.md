@@ -1,7 +1,7 @@
 # Speech to Browser Translator
 
 This Programm translate German to Englisch in real time for free at the browser.
-It can be easily intgrated in OBS with the Window Mode (background can be removed with the Chroma Key).
+It can be easily integrated in OBS with the Window Mode (background can be removed with the Chroma Key).
 
 ## How to Run this 
 
