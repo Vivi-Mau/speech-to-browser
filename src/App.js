@@ -1,7 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
-
 const App = () => {
  const [message, setMessage] = useState('');
  const [isLoaded, setIsLoaded] = useState(false);
@@ -13,7 +12,6 @@ const App = () => {
   resetTranscript,
   listening,
 } = useSpeechRecognition();
-
 
 const url = "https://libretranslate.com/translate?";
 
@@ -32,16 +30,13 @@ var finalText="";
       if (finalTranscript !== '') {
         console.log('Got final result:', finalTranscript);
         var data = 'q='+ finalTranscript +'&source=de&target=en';
-        console.log(data)
         resetTranscript()
             fetch(url + data, requestOptions)
           .then(res => res.json())
           .then(
             (result) => {
-              console.log(result)
               finalText = result.translatedText
-              console.log(finalText)
-              document.querySelector("h1").innerHTML =finalText
+              document.querySelector("h1").innerHTML = finalText
               setIsLoaded(true);
               setItems(result);
             }
@@ -62,7 +57,7 @@ var finalText="";
  };
 
  return (
-   <div >
+   <div style={{backgroundColor: 'green'}}>
      <div>
        <span style={{  }}>
          listening:
@@ -77,10 +72,13 @@ var finalText="";
      </div>
      <div>{listenContinuously}
        {message}
-     </div >
         <div >
-          <h1 style={{color: 'purple'}}> </h1>
+          <h1> </h1>
        </div>
+       <div >
+         <p style={{color: 'green'}}> .</p>
+       </div>
+       </div >
    </div>
  );
 };
